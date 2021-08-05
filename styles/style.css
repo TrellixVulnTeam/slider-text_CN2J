@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
+.html {
+  margin: 0;
+}
+
+.page {
+  height: 100vh;
+  padding: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+.slider {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slider__left {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 35%;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.slider__content {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  background-color: #FFB866;
+}
+
+.slider__right {
+  position: absolute;
+  height: 100%;
+  width: 65%;
+  left: 35%;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.slider__background {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.slider__buttons {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 1;
+}
+
+.slider__button_down {
+  position: inherit;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.slider__button_up {
+  position: inherit;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.slider__article {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 60px;
+}
+
+.slider__text {
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.img_1 {
+  background-image: url("https://sun9-39.userapi.com/impf/c845523/v845523037/28b47/JJ-wCVmo0s8.jpg?size=592x1040&quality=96&sign=1e7d7dac178e37da74084c0d6fcb8fa0&type=album");
+  background-position: center 15%;
+}
+
+.img_2 {
+  background-image: url("https://sun9-46.userapi.com/impg/guqo1PvCxh7ZAtrIWwWZ_c5SeZEHO90ND0hNLg/SYIwD4luYqQ.jpg?size=810x1080&quality=96&sign=4520b10af1b982d15fc9a368ff120f93&type=album");
+}
+
+.img_3 {
+  background-image: url("https://sun9-75.userapi.com/impg/c857232/v857232545/1501db/72tzBu1whkA.jpg?size=516x287&quality=96&sign=4dd13aa8126e1e68203462e8b9bda280&type=album");
+}
+
+.img_4 {
+  background-image: url("https://sun9-13.userapi.com/impf/c851428/v851428772/2b3c8/n2VaJF2ja2M.jpg?size=877x698&quality=96&sign=a92b8411cfb45af687ec43c08351ac74&type=album");
+}
+/*# sourceMappingURL=style.css.map */
