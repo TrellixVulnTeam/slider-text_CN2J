@@ -14,7 +14,16 @@ slider_left.style.top = `-${(slider_length - 1) * 100}vh`;
 
 button_up.addEventListener('click', () => changeSlide('up'))
 button_down.addEventListener('click', () => changeSlide('down'))
+slider.addEventListener('wheel', zoom);
 
+
+function zoom (event){  
+    if ((event.deltaY / -100) > 0 ){
+        changeSlide('up')
+    }else{
+        changeSlide('down')
+    }
+}
 
 const changeSlide = (direction) => {
     const sliderHeight = slider.clientHeight
@@ -36,4 +45,4 @@ const changeSlide = (direction) => {
 
 
 
-console.log(slider_length);
+// console.log(zoom);
